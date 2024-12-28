@@ -30,7 +30,7 @@ version: "3.8"
 services:
   iniminer:
     pull_policy: always
-    restart: on-failure
+    restart: unless-stopped
     build:
       context: .
     container_name: iniminer-service
