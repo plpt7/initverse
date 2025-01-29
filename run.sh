@@ -35,7 +35,7 @@ services:
       context: .
     container_name: iniminer-service
     command: >
-      /app/iniminer-linux-x64 --pool stratum+tcp://${WALLET_ADDRESS}.${WORKER_NAME}@pool-core-testnet.inichain.com:32672 --cpu-devices 1 --cpu-devices 2
+      /app/iniminer-linux-x64 --pool stratum+tcp://${WALLET_ADDRESS}.${WORKER_NAME}@pool-a.yatespool.com:31588 --cpu-devices 1 --cpu-devices 2
     tty: true
     volumes:
       - ./iniminer-linux-x64:/app/iniminer-linux-x64
